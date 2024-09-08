@@ -1,5 +1,7 @@
+//using VideoStore24razor.VideoStore.Data;
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddScoped<IVideoData, TestData>();
 // Add services to the container.
 builder.Services.AddRazorPages();
 
